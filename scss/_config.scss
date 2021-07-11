@@ -1,0 +1,26 @@
+// variables
+$linear-gradient: linear-gradient(261.46deg, rgba(231, 140, 88, 0.8) 9.57%, rgba(59, 135, 168, 0.8) 94.89%);
+
+$light: #ffffff;
+$dark: #000000;
+$primary: #E78C58;
+$secondary: #3B87A8;
+
+
+//fonts
+@font-face {
+    font-family: 'Gotham Bold';
+    src: url(/fonts/GOTHAM-BOLD.TTF);
+}
+@font-face {
+    font-family: 'Gotham Book';
+    src: url(/fonts/Gotham-Book.otf);
+}
+@font-face {
+    font-family: 'Qillo';
+    src: url(/fonts/Qillo-Regular-demo.ttf);
+}
+@font-face {
+    font-family: 'Vultures';
+    src: url(/fonts/Taken-by-Vultures.otf);
+}
