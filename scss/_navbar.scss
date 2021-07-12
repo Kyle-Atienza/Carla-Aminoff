@@ -16,7 +16,33 @@ nav{
         justify-content: space-between;
         width: Max(30%, 300px);
         width: clamp(300px, 55%, 500px);
-
+        
+        li{
+            padding: 10px .8em;
+            border-radius: 3px;
+            transition: all .2s ease;
+        }
+        li:hover, li:focus{
+            background: $primary;
+            
+        }
+        li:hover > a, li:focus > a{
+            color: $light;
+        }
     }
     
+}
+
+@media screen and (max-width: 768px) {
+
+nav{
+    
+    ul{
+        
+        li{
+            padding: 5px .3em;
+        }
+    }
+}
+
 }
