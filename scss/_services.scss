@@ -1,0 +1,29 @@
+@import 'config';
+@import 'global';
+
+#services{
+
+    main{
+
+        .container{
+            width: $container;
+            margin: 0 auto;
+            padding: $top-bottom;
+
+            .packages{
+                display: flex;
+                height: 400px;     
+                justify-content: space-between;  
+                gap: 1em;         
+                margin-top: 30px;
+
+                >*{
+                    flex: 100%;
+                    background: rgb(243, 243, 243);
+                    box-shadow: 0px 28px 100px -31px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+    }
+
+}

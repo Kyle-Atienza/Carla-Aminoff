@@ -14,11 +14,11 @@ nav{
         list-style: none;
         align-items: center;
         justify-content: space-between;
-        width: Max(30%, 300px);
-        width: clamp(300px, 55%, 500px);
+        width: Min( 55%, 500px);
         
         li{
             padding: 10px .8em;
+            padding: $link-padding;
             border-radius: 3px;
             transition: all .2s ease;
         }
@@ -36,13 +36,11 @@ nav{
 @media screen and (max-width: 768px) {
 
 nav{
-    
+
     ul{
-        
-        li{
-            padding: 5px .3em;
-        }
+        width: 80%;
     }
 }
 
-}
+ }
+

@@ -9,25 +9,92 @@
     <link rel="stylesheet" href="css/style.css">
     
 </head>
-<body>
+<body id="works">
     
     <nav>
         <ul class="nav-links">
             <li><a href="index.html">HOME</a></li>
-            <li><a href="">ABOUT</a></li>
-            <li><a href="">WORKS</a></li>
-            <li><a href="">SERVICES</a></li>
+            <li><a href="#">WORKS</a></li>
+            <li><a href="services.html">SERVICES</a></li>
             <li><a href="">CONTACT</a></li>
             <li><a href="">FAQs</a></li>
         </ul>
     </nav>
 
-    <main>
-        <div class="contianer">
+    <main> 
+        <div class="container">
+            <h2 class="page-title">Gallery</h2>
+            <ul class="categories">
+                <li onclick="change_gallery('all')" class="all active"><h6>All</h6></li>
+                <li onclick="change_gallery('weddings')" class="weddings" ><h6>Weddings</h6></li>
+                <li onclick="change_gallery('portraits')" class="portraits"><h6>Portraits</h6></li>
+                <li onclick="change_gallery('nature')" class="nature"><h6>Nature</h6></li>
+                <li onclick="change_gallery('food')" class="food"><h6>Food</h6></li>
+           
+            </ul>
+            <div id="gallery-group" class="gallery">
+                <div class="all active">
+                    <div class="item"><img src="imgs/works/2HoNNQTJAsI.png" alt=""></div>
+                    <div class="item"><img src="imgs/works/dtbyOgrXzp8.png" alt=""></div>
+                    <div class="item"><img src="imgs/works/DyQiNSgrM58.png" alt=""></div>
+                    <div class="item"><img src="imgs/works/FByA7W15XiM.png" alt=""></div>
+                    <div class="item"><img src="imgs/works/jlCXd-v5qVs.png" alt=""></div>
+                    <div class="item"><img src="imgs/works/L2PG9tV06to.png" alt=""></div>
+                </div>
+                <div class="weddings">
+                    <div class="item"><img src="imgs/works/wedding/beatriz-perez-moya-M2T1j-6Fn8w-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/wedding/isaiah-rustad-e0QVpFvn_fE-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/wedding/jakob-owens-SiniLJkXhMc-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/wedding/luwadlin-bosman-P_HRPYpFTNA-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/wedding/olivia-bauso-30UOqDM5QW0-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/wedding/sofia-hernandez-8cCfjxR8KTw-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/wedding/victoria-priessnitz-MMNgGsFEbuI-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/wedding/vitor-pinto-iqA2-nRO0bQ-unsplash.jpg" alt=""></div>
+                </div>
+                <div class="portraits">
+                    <div class="item"><img src="imgs/works/portraits/ali-pazani-3SyAbr5MXMA-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/portraits/blake-cheek-UoPsuln0Etg-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/portraits/caleb-lucas-6rRuAqtWt60-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/portraits/jonathan-adams-6BRPupXqvDQ-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/portraits/joshua-rawson-harris-dN67hPE5KWY-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/portraits/joshua-rawson-harris-vFiBgWnk2x0-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/portraits/omid-armin-6G2G6_rq-B0-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/portraits/prince-akachi-i2hoD-C2RUA-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/portraits/wassim-chouak-X1fKWQM-GXY-unsplash.jpg" alt=""></div>
+                </div>
+                <div class="nature">
+                    <div class="item"><img src="imgs/works/nature/blake-richard-verdoorn-cssvEZacHvQ-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/nature/eberhard-grossgasteiger-BXasVMRGsuo-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/nature/justin-kauffman-a8lTjWJJgLA-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/nature/luc-vlekken-9Y8A97opXQ4-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/nature/luca-bravo-VowIFDxogG4-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/nature/michael-baccin-sN4nCLXGiu8-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/nature/roberto-nickson-b1ovoL_F1S8-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/nature/sabeer-darr-Upz-tnx2v2s-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/nature/v2osk-1Z2niiBPg5A-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/nature/wil-stewart-pHANr-CpbYM-unsplash.jpg" alt=""></div>
+                </div>
+                <div class="food">
+                    <div class="item"><img src="imgs/works/food/alex-munsell-auIbTAcSH6E-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/food/anna-tukhfatullina-food-photographer-stylist-Mzy-OjtCI70-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/food/ball-park-brand-DGHy9KgdTj0-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/food/brooke-lark--F_5g8EEHYE-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/food/brooke-lark-HlNcigvUi4Q-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/food/carissa-gan-_0JpjeqtSyg-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/food/casey-lee-awj7sRviVXo-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/food/eaters-collective-pLKgCsBOiw4-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/food/emy-XoByiBymX20-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/food/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/food/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg" alt=""></div>
+                    <div class="item"><img src="imgs/works/food/pablo-merchan-montes-MXovqM130UI-unsplash.jpg" alt=""></div>
+
+                </div>
+            </div>
             
         </div>
     </main>
-    <h2 class="page-title">Gallery</h2>
+    
+<script src="script.js"></script>
 
 </body>
 </html>

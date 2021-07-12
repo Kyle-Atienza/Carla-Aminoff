@@ -19,8 +19,8 @@ h1{
 h2{
     font-family: 'Gotham Bold';
     font-size: 3rem;
-    font-size: clamp(1.5rem, 5vw, 3rem);
-    letter-spacing: .3em;
+    font-size: clamp(1.5rem, 5vw, 4rem);
+    letter-spacing: .05em;
 }
 h3{
     font-family: 'Vultures';
@@ -29,12 +29,18 @@ h3{
     line-height: .5em;
     transform: translateY(-40%);
 }
+h4{
+    font-family: 'Gotham Bold';
+    font-size: .5rem;
+    font-size: clamp(.8rem, 5vw, 1.5rem);
+    letter-spacing: .05em;
+}
 p{
     font-family: 'Gotham Book';
     font-size: 1rem;
     font-size: clamp(.6rem, 8vw, .8rem);
 }
-a{
+a, h6{
     font-family: 'Gotham Book';
     font-size: clamp(.6rem, 2vw, .8rem);
     letter-spacing: .1em;

@@ -8,6 +8,11 @@ $secondary: #3B87A8;
 
 $top-bottom: clamp(50px, 10vw, 150px) 0;
 
+$container: 50vw;
+$mobile-container: 80vw;
+
+$link-padding: clamp(5px, .5vw, 10px) clamp(.3em, 1vw, .8em);
+
 
 //fonts
 @font-face {

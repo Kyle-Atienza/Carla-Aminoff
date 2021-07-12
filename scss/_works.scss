@@ -1,0 +1,72 @@
+@import 'config';
+@import 'global';
+
+#works{
+
+    main{
+
+        .container{
+            width: $container;
+            margin: 0 auto;
+            padding: $top-bottom;
+            
+
+            .categories{
+                display: flex;
+                list-style: none;
+                width: 40%;
+                justify-content: space-between;
+                margin-top: 30px;
+
+                li{
+                    padding: $link-padding;
+                    cursor: pointer;
+                }
+                .active{
+                    border-bottom: 2px $dark solid;
+                }
+            }
+            .gallery{
+                margin: $top-bottom;
+
+                >*{
+                    display: none;
+                }
+                .active{
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: clamp(.3em, 1vw, .7em);
+                    width: 100%;
+    
+                    *{
+                        width: auto;
+                        height: clamp(100px, 20vw, 300px);
+                        flex-grow: 1;
+                        box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.10);
+                        
+                        img{
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+    main{
+
+        .container{
+            width: $mobile-container;
+
+            .categories{
+                width: 100%;
+            }
+        }
+    }
+
+    }
+}
