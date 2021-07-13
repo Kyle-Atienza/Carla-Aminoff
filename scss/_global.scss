@@ -30,15 +30,15 @@ h3{
     transform: translateY(-40%);
 }
 h4{
-    font-family: 'Gotham Bold';
+    font-family: 'Gotham Book';
     font-size: .5rem;
     font-size: clamp(.8rem, 5vw, 1.5rem);
-    letter-spacing: .05em;
+    //letter-spacing: .05em;
 }
-p{
+p, li{
     font-family: 'Gotham Book';
     font-size: 1rem;
-    font-size: clamp(.6rem, 8vw, .8rem);
+    font-size: clamp(.6rem, 8vw, 1rem);
 }
 a, h6{
     font-family: 'Gotham Book';

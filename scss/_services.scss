@@ -17,11 +17,20 @@
                 gap: 1em;         
                 margin-top: 30px;
 
-                >*{
+                .package{
                     flex: 100%;
                     background: rgb(243, 243, 243);
                     box-shadow: 0px 28px 100px -31px rgba(0, 0, 0, 0.1);
+
+                    .features{
+                        list-style: none;
+
+                    }
                 }
+                .package:hover{
+                    border: 2px $secondary solid;
+                }
+
             }
         }
     }
